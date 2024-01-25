@@ -1,0 +1,10 @@
+
+
+public class replacestring {
+    public static void main(String[] args){
+        String s = "varun";
+        String g = s.replace("varun","apitha");
+        System.out.println("The word before replacing is: " + s);
+        System.out.println("The word after replacing is: " + g );
+    }
+}
