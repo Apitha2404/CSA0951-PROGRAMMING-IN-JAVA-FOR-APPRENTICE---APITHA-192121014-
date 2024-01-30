@@ -1,0 +1,17 @@
+import java.util.*;
+public class remove {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a1[] = {1, 2, 3, 2, 4, 1};
+        Set<Integer> set = new LinkedHashSet<>();
+        for (int x : a1) {
+            set.add(x);
+        }
+        int a2[] = new int[set.size()];
+        int index = 0;
+        for (int value : set) {
+            a2[index++] = value;
+        }
+        System.out.println(Arrays.toString(a2));
+    }
+}
