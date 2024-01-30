@@ -1,0 +1,23 @@
+public class specific  {
+    public static void main(String[] args) {
+        int[] array = {1, 3, 5, 7, 9};
+        int target = 5;
+
+        boolean exists = doesElementExist(array, target);
+
+        if (exists) {
+            System.out.println(target + " exists in the array.");
+        } else {
+            System.out.println(target + " does not exist in the array.");
+        }
+    }
+
+    static boolean doesElementExist(int[] array, int target) {
+        for (int num : array) {
+            if (num == target) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
