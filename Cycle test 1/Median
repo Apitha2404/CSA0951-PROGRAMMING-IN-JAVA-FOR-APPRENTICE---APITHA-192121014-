@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class median {
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        int a[]={1,2,7,5,10,12};
+        int b=0;
+        for(int i=0;i<a.length;i++){
+            b=a[2]+a[3];
+        }
+        float median;
+        median=b/2;
+        System.out.println("median of array="+median);
+    }
+}
