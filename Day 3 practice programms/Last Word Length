@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class LastWordLength {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String s = scanner.nextLine();
+        int length = getLastWordLength(s);
+        System.out.println("Length of the last word: " + length);
+    }
+
+    public static int getLastWordLength(String s) {
+
+        s = s.trim();
+
+        int lastSpaceIndex = s.lastIndexOf(' ');
+
+
+        String lastWord = s.substring(lastSpaceIndex + 1);
+
+        return lastWord.length();
+    }
+}
